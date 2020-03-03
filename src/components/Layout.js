@@ -1,11 +1,16 @@
-import React, { Component, useLayoutEffect } from 'react';
+import React, { Component } from 'react';
+
+import Header from './headernavbar/header';
+import Navbar from './headernavbar/navbar';
+
 
 class Layout extends Component {
   render() {
     return (
-      <div className='app'>
-        {this.props.children}
-        <h2>React Redux Router</h2>
+      <div className='layout'>
+       { this.props.children }
+        <Header/>
+        <Navbar/>
       </div>
     );
   }
