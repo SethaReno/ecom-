@@ -16,6 +16,11 @@ html {
     font-family: 'montserrat';
 }
 
+body {
+    font-family: "Open Sans";
+    color: #808080;
+}
+
 
 @import 'layout';
 @import 'headernavbar';
@@ -23,3 +28,4 @@ html {
 @import 'auth/sign-up';
 
 @import 'page-title';
+@import 'form-fields.scss';

@@ -8,19 +8,20 @@ class  SignInForm extends Component {
     render() {
         const { className, handleSubmit } = this.props;
         return (
-            <form onSubmit={handleSubmit} className={'${className} sign-in-form'}>
+            <form onSubmit={handleSubmit} className={`${className} sign-in-form`}>
             <Field className='sign-in-form__email'
             type='email'
             title='Email'
             placeholder='Email'
             name='email'
-            component={FormInput}/>gir
+            component={FormInput}/>
            <Field className='sign-in-form__password'
            type='password'
-           title='password'
-           placeholder='password'
+           title='Password'
+           placeholder='Password'
            name='password'
            component={FormInput}/>
+           <div className='sign-in-form__line'></div>
              <Field className='sign-in-form__login'
              onClick={() => console.log('tryna submit')}
            type='submit'
