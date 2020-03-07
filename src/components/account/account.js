@@ -10,6 +10,19 @@ class Account extends Component {
 
     componentDidMount() {
 
+        const headerLinks = [
+            {
+                _id: 0,
+                title: 'Shop',
+                path: '/shop'
+            },
+            {
+                _id: 1,
+                title: 'Logout',
+                path: '/'
+            }
+        ]
+
         const navbarLinks = [
             {
                 _id: 0,
@@ -25,7 +38,7 @@ class Account extends Component {
             }
         ]
 
-        this.props.setHeaderLinks([]);
+        this.props.setHeaderLinks(headerLinks);
         this.props.setNavbarLinks(navbarLinks);
     }
 
@@ -57,4 +70,4 @@ function mapStateToProps(state) {
 
 Account = connect(mapStateToProps, actions)(Account);
 
-export default Account;
+export default Account
