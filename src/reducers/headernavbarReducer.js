@@ -5,25 +5,7 @@ import {
 
 const INITIAL_STATE = {
     headerLinks: [],
-    navbarLinks: [],
-    headerLinks: [
-        {
-            title: 'yooo'
-        },
-        {
-            title: 'YOOO'
-        }
-    ],
-    navbarLinks: [
-        {
-            title: 'account',
-            active: true
-        },
-        {
-            title: 'purchases',
-            active: false
-        }
-    ]
+    navbarLinks: []
 }
 
 export default function(state = INITIAL_STATE, action) { switch (action.type) {
