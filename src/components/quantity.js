@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faMinus } from '@fortawesome/free-solid-svg-icons';
 
 class Quantity extends Component {
   render() {
@@ -7,12 +10,12 @@ class Quantity extends Component {
       <div className={`${className} quantity`}>
         <div className="quantity__count">
             {quantity}
-            </div>
+        </div>
         <div className="quantity__plus">
-            <i className='fas fa-plus'></i>
+            <FontAwesomeIcon icon={faPlus}/>
         </div>
         <div className="quantity__minus">
-        <i className='fas fa-minus'></i>
+        <FontAwesomeIcon icon={faMinus}/>
         </div>
       </div>
     );
