@@ -22,7 +22,7 @@
 .search-bar-grid {
     display: grid;
     grid-template-rows: [s] 1fr [e];
-    grid-template-columns: 20px [s] 700px [icon-e] 1fr [e];
+    grid-template-columns: 20px [s] 700px [icon-e] 1fr [e] 50px;
     font-size: 18px;
     &__icon {
         grid-row: s/e;
@@ -35,7 +35,7 @@
         grid-row: s/e;
         grid-column: 1/e;
        
-        padding-left: 50px;
+        
     }
 }
 
